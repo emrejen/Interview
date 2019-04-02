@@ -22,6 +22,10 @@ describe('Chat Interview application', () => {
     done();
   });
 
+  it('shold not crach', () => {
+    expect(app).to.be.an.instanceof(InterviewServer);
+  });
+
   it('should have a server running', async () => {
     const result = await request(baseUrl).get('/');
     expect(result.status).to.equal(HttpStatus.OK);
