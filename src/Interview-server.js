@@ -1,4 +1,3 @@
-
 import express from 'express';
 import routes from './server/routes';
 
@@ -14,7 +13,9 @@ class InterviewServer {
 
   start() {
     // eslint-disable-next-line no-console
-    this.instance = this.app.listen(this.port, () => console.log(`Intervew app listening on port ${this.port}!`));
+    this.instance = this.app.listen(this.port, () =>
+      console.log(`Intervew app listening on port ${this.port}!`),
+    );
   }
 
   shutdown() {

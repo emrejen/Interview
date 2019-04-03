@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
-    mocha: true
+    mocha: true,
   },
   extends: 'airbnb-base',
   globals: {
@@ -17,6 +17,6 @@ module.exports = {
   rules: {
     indent: 2,
     'arrow-parens': [2, 'as-needed'],
-    'no-plusplus': 0
+    'no-plusplus': 0,
   },
 };
