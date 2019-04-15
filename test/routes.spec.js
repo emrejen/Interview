@@ -5,7 +5,7 @@ import { expect } from 'chai';
 import Chance from 'chance';
 import InterviewServer from '../src/Interview-server';
 import aMessage from '../src/server/messages/message';
-import dao from '../src/server/database/cellebrite-db';
+import dao from '../src/server/database/application-db-adapter';
 
 describe('Chat Interview application', () => {
   const chance = new Chance();
@@ -29,7 +29,7 @@ describe('Chat Interview application', () => {
   it('should have a server running', async () => {
     const result = await request(baseUrl).get('/');
     expect(result.status).to.equal(HttpStatus.OK);
-    expect(result.text).to.equal('Hello Celebrite');
+    expect(result.text).to.equal('Hello World');
   });
 
   it('should reply with a list of users', async () => {

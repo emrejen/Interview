@@ -1,4 +1,4 @@
 const defaultRoute = (req, res) => {
-  res.send('Hello Celebrite');
+  res.send('Hello World');
 };
 export default defaultRoute;
