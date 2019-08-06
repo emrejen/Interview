@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha  --watch --require @babel/register && npm run lint",
+    "test": "./node_modules/.bin/mocha  --timeout 5000 --watch --require @babel/register && npm run lint",
     "start": "nodemon --exec babel-node ./src/index.js",
     "lint": "eslint src/** test/**",
     "prettier": "./node_modules/.bin/prettier --write '{*.js,!(node*)**/*.js}'"

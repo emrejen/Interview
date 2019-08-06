@@ -3,10 +3,10 @@ import aMessage from '../messages/message';
 
 class Storage {
   constructor() {
-    this.init();
+    this.clearAndLoadDefaults();
   }
 
-  init() {
+  clearAndLoadDefaults() {
     this.users = [];
     this.messages = [];
     for (let i = 0; i < 7; ++i) {
@@ -28,6 +28,11 @@ class Storage {
   postMessage(message) {
     this.messages.push(message);
   }
+
+  clear() {
+    this.messages = [];
+  }
+
 }
 
 export default new Storage();

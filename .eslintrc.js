@@ -15,7 +15,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    indent: 2,
+    indent: 4,
     'arrow-parens': [2, 'as-needed'],
     'no-plusplus': 0,
   },

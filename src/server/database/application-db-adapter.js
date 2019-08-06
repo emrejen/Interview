@@ -3,11 +3,11 @@ import storage from './database';
 class ApplicationDBAdapter {
   constructor(dbInstance) {
     this.storage = dbInstance;
-    this.storage.init();
+    this.storage.clearAndLoadDefaults();
   }
 
   init() {
-    this.storage.init();
+    this.storage.clearAndLoadDefaults();
   }
 
   getUsers() {
@@ -20,6 +20,10 @@ class ApplicationDBAdapter {
 
   postMessage(message) {
     this.storage.postMessage(message);
+  }
+
+  clearMessages() {
+    this.storage.clear();
   }
 }
 
