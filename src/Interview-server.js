@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import routes from './server/routes';
 
 const DEFAULT_APP_PORT = 3000;
@@ -7,6 +8,7 @@ class InterviewServer {
   constructor() {
     this.app = express();
     this.app.use(routes);
+    this.app.use(cors());
     this.port = process.env.PORT || DEFAULT_APP_PORT;
     this.instance = null;
   }
