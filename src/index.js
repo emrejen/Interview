@@ -1,3 +1,3 @@
-import InterviewServer from './Interview-server';
+import InterviewServer from './server/Interview-server';
 
 new InterviewServer().start();
