@@ -1,7 +1,16 @@
 # Interview
 ## Introduction
+
 Basic application for a front-end interview.
-Create a front end application in whatever technology that you feel comfortable with.
+For this exercise, we ask that you create a front-end Chat application. Below you will find the API calls that you need to implement. 
+You are the Product; you are the designer - so as you want.
+Create a front-end application in whatever technology that you feel comfortable with.
+
+We would like to see:
+* all the current messages in the system
+* the list of online users
+* a place to type your own message (you are one of the online users - select one to be you)
+
 ## API
 You will need to implement the following API calls
 
