@@ -1,3 +1,4 @@
-import InterviewServer from './server/Interview-server';
+import express from 'express';
+import server from './server/Interview-server';
 
-new InterviewServer().start();
+server(express).start();
